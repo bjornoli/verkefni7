@@ -63,7 +63,7 @@ function play() {
  const random = randomNumber(1,100);
  console.log(random);
  var tries = 1;
- let guess = prompt("Giskaðu á tölu milli 1 og 100 " + random, "");
+ let guess = prompt("Giskaðu á tölu milli 1 og 100 ", "");
  if (guess == null) {
      alert('Hætt var við leik');
      let average = calculateAverage();
@@ -72,7 +72,7 @@ function play() {
  }
  let guess2 = parseGuess(guess);
  while (getResponse(guess2, random) != 'Rétt') {
-     guess = prompt("Giskaðu á tölu milli 1 og 100 " + random, "");
+     guess = prompt("Giskaðu á tölu milli 1 og 100 ", "");
      if (guess) {
         guess2 = parseGuess(guess);
         tries = tries + 1;
